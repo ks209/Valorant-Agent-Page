@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gilroy';
-    overflow: hidden;
+    overflow: ;
 }
 
 html,body{
@@ -47,7 +47,6 @@ html,body{
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 #logo{
@@ -76,7 +75,7 @@ html,body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    top:65%; 
+    top:50%; 
     left: 0; 
     transform: translate(0,-50%);
 }
