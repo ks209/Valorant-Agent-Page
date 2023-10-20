@@ -47,6 +47,7 @@ html,body{
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 #logo{
@@ -75,7 +76,7 @@ html,body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    top:50%; 
+    top:65%; 
     left: 0; 
     transform: translate(0,-50%);
 }
