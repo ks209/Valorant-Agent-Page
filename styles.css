@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.top{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    opacity: 0.9;
+}
+
+#workingarea{
+    height: 100%;
+    width: 80%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav{
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    height: 120px;
+}
+
+#left,#right{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7vw;
+    font-weight: 700;
+    pointer-events: all;
+    transition: all ease-in-out 0.5s;
+}
+
+#hero{
+
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top:50%; 
+    left: 0; 
+    transform: translate(0,-50%);
+}
+
+#heroleft{
+    min-width: 50%;
+}
+
+#heroright{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#heroleft .elem{
+    position: relative;
+    height: 9vw;
+    overflow-y: hidden;
+}
+
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#heroleft .elem h1{
+    position: absolute;
+    line-height: 0.9;
+    font-family: "kajiro";
+    font-size: 11vw;
+    font-weight: 100;
+    color: #ffffff;
+    -webkit-text-stroke-color: rgb(183, 183, 183);
+    -webkit-text-stroke-width: 3px;
+    top: 100%;
+    left:0;
+}
+
+
+#heroleft button{
+    padding: 0.8vw 3vw;
+    font-family: 'kajiro';
+    font-size: 3.5vw;
+    margin-top: 2vw;
+    font-weight: 300;
+    pointer-events: all;
+    position: absolute;
+    z-index: 999999;
+    transition: 1s;
+    color: #fff;
+    background: linear-gradient(to right,rgb(150, 9, 9)50%,rgb(2, 6, 32) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+#heroright p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+
+#img-div{
+    width: 150%;
+    height: 375px;
+    background-image: url("./Valorant/peakpx.jpg");
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 999;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
+
+
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#heroleft button:hover{
+    background-position: left bottom;
+}
+
+
+.nav a:hover{
+    transform: scale(1.3);
+    text-decoration: underline;
+}
