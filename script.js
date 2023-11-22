@@ -92,6 +92,7 @@ document.querySelector("#main").addEventListener("click", function(){
     if(!animating  && !buttonClicked){
         animating=true;
         gsap.to(h1s[index],{
+            opacity: 0,
             top: '-=100%',
             ease: Expo.easeInOut,
             duration: 1,
@@ -107,6 +108,7 @@ document.querySelector("#main").addEventListener("click", function(){
             top: '-=100%',
             ease: Expo.easeInOut,
             duration: 1,
+            opacity: 1
         })
     }
 })
